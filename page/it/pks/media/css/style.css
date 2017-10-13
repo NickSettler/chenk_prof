@@ -1,0 +1,244 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+*::selection{
+    background: #157fc4;
+    color: white;
+}
+
+body{
+    font-size: 16px;
+    line-height: 20px;
+/*
+    font-family: "PT Sans", PTsans, Arial, sans-serif;
+    color: #1c1c1c;
+    background: #ededed;
+*/
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #ededed;
+}
+
+a{text-decoration: none;color: white;}
+img {
+/*    vertical-align: middle;*/
+    max-width: 100%;
+}
+
+/*
+    * HEADER *
+    * header - chenk *
+    * header - dk *
+*/
+
+header{
+    height: 50vh;
+    background: url(../../image/bg_50_25_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+/* Header - chenk */
+.chenk{
+/*	background: #157fc4;*/
+    padding: 10px 5vw;
+    margin-bottom: 4vh;
+    text-align: left;
+    transition: all .3s;
+}
+
+.chenk:hover{
+    opacity: 1;
+}
+
+.chenk img{
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.chenk a{
+    color: white;
+}
+
+.chenk span{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.chenk span small{
+    margin-left: 3px;
+    font-size: .7rem;
+}
+
+/* Header - content */
+header h1{
+/*    margin-top: 7vh;*/
+}
+
+.camPng{
+    height: 74px;
+    width: 140px;
+    background: url(../../image/videoPlay.png);
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camPng:hover{
+    cursor: pointer;
+}
+
+.myVideo{
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0,.9);
+	position: fixed;
+/*	top: -100vh;*/
+    top: -100vh;
+	left: 0;
+    z-index: 500;
+	transition: all .3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row;
+}
+
+.thisVideo{
+	height: 60vh;
+	width: 50vw;
+/*	background: white;*/
+	z-index: 800;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.videoC{
+	width: 50vw;
+}
+
+
+
+.close{
+    cursor: pointer;
+    width: 30px;
+    margin-left: 8px;
+}
+
+/* 
+    * CONTENT *
+    * content - menu *
+*/
+.content{
+    
+}
+
+/* Content - menu */
+.menu{
+    width: 100%;
+    border-bottom: 2px solid #e9e9e9;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+}
+
+.menu ul.left, .menu ul.right{
+    float: left;
+    background: rgba(69, 163, 186, .2);
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.menu ul.right{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    padding: 15px 20px;
+    color: #157fc4;
+    display: block;
+    transition: all .3s;
+}
+
+.menu ul li a:hover{
+    background: #157fc4;
+    color: white;
+}
+
+.menu ul li a.active{
+    background: #157fc4;
+    color: white;
+}
+
+ul.left li a, ul.right li a{
+    padding: 15px 30px;
+}
+
+/* Content_to-flow */
+.content_nav{
+    padding: 5vh 8vw;
+}
+
+.content_to-flow{
+/*    height: 90vh;*/
+    padding: 15px 40px 35px;
+    background: white;
+    border-top: 4px solid #157fc4;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.content_to-flow h2{
+    text-align: center;
+}
+
+.content_to-flow p{
+    line-height: 25px;
+    
+}
+
+.content_to-flow ol li{
+    line-height: 25px;
+}
+
+p.top_p b {
+    font-size: 1.2rem;
+}
+
+
+/* 
+    * FOOTER *
+*/
+footer{
+    background: #181818;
+    color: white;
+    height: 10vh;
+    padding-left: 8vw;
+    line-height: 10vh;
+}

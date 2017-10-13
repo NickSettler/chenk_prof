@@ -1,0 +1,229 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+*::selection{
+    background: #157fc4;
+    color: white;
+}
+
+body{
+    font-size: 16px;
+    line-height: 20px;
+/*
+    font-family: "PT Sans", PTsans, Arial, sans-serif;
+    color: #1c1c1c;
+    background: #ededed;
+*/
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+}
+
+a{text-decoration: none;color: white;}
+img {
+/*    vertical-align: middle;*/
+    max-width: 100%;
+}
+
+
+/*
+    * HEADER *
+    * header - chenk *
+    * header - dk *
+*/
+
+header{
+    height: 50vh;
+    background: url(../../image/bg_50-25.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+/* Header - chenk */
+.chenk{
+/*	background: #157fc4;*/
+    padding: 10px 5vw;
+    margin-bottom: 4vh;
+    text-align: left;
+    transition: all .3s;
+}
+
+.chenk:hover{
+    opacity: 1;
+}
+
+.chenk img{
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.chenk a{
+    color: white;
+}
+
+.chenk span{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.chenk span small{
+    margin-left: 3px;
+    font-size: .7rem;
+}
+
+/* Header - content */
+header h1{
+/*    margin-top: 7vh;*/
+}
+
+/* Content - menu */
+.menu{
+    width: 100%;
+    border-bottom: 2px solid #e9e9e9;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+
+}
+
+.menu ul.left, .menu ul.right{
+    float: left;
+    background: rgba(69, 163, 186, .2);
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.menu ul.right{
+    right: 0;
+}
+
+.menu ul.left{
+    left: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    padding: 15px 20px;
+    color: #157fc4;
+    display: block;
+    transition: all .3s;
+
+}
+
+.menu ul li a:hover{
+    background: #157fc4;
+    color: white;
+}
+
+.menu ul li a.active{
+    background: #157fc4;
+    color: white;
+}
+
+ul.left li a, ul.right li a{
+    padding: 15px 30px;
+}
+/* Content_to-flow */
+.content_nav{
+    padding: 5vh 8vw;
+}
+
+.content_to-flow{
+/*    height: 90vh;*/
+    padding: 15px 40px 35px;
+    background: #efefef;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.content_to-flow h1{
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 7vh;
+}
+
+.container{
+/*    height: 60vh;*/
+    width: 900px;
+/*    background: rgba(255, 255, 255, .5);*/
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* GR  - one*/
+.one, .two, .three{
+    height: 45vh;
+    width: 260px;
+/*    background: rgba(56, 212, 43, .6);*/
+    background: url(../../image/worldskills_one.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 12vh 15px 15px;
+    text-align: center;
+    float: left;
+    transition: all .3s;
+    opacity: .8;
+}
+
+.one:hover, .two:hover, .three:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container p{
+    line-height: 25px;
+}
+
+/* GR - two */
+.two{
+    margin: 0 auto;
+    float: none;
+}
+
+/* GR - three */
+.three{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.to_top{
+    margin-top: 10vh;
+}
+
+
+/* 
+    * FOOTER *
+*/
+footer{
+    background: #181818;
+    color: white;
+    height: 10vh;
+    padding-left: 8vw;
+    line-height: 10vh;
+}
