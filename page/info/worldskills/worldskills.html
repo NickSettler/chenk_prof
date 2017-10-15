@@ -16,8 +16,14 @@
     <!-- CSS Fail -->
     <link rel="stylesheet" href="media/css/style.css">
     <link rel="stylesheet" href="media/css/media.css">
+    <link rel="stylesheet" href="media/css/lightbox.css">
+
+    <script type="text/javascript" src="media/js/jquery.js"></script>
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="media/css/jquery.bxslider.css">
+    <script src="media/js/jquery.bxslider.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -26,9 +32,7 @@
         <div class="chenk">
             <a href="http://chenk.ru"><img src="img/favicon.png" alt="Логотип"></a>
             <a href="http://chenk.ru">
-               <span>Челябинский энергетический колледж им. С.М. Кирова</br>
-                   <small>ГБПОУ Челябинский энергетический колледж им. С.М. Кирова</small>
-               </span>
+               <span>Челябинский энергетический колледж им. С.М. Кирова</span>
            </a>
         </div>
         <h1>WorldSkills Russia</h1>
@@ -63,7 +67,22 @@
         
         <div class="content_nav">
             <div class="content_to-flow">
-                
+                <h3>Студенты и преподаватели Челябинского Энергетического колледжа активные участники  международного движения WorldSkills.</h3>
+                <p>
+                    Результаты участия в IV региональном чемпионате «Молодые Профессионалы» (WorldSkills Russia) Южный Урал, 2016 г. <br/>
+                    Команда Челябинского энергетического  колледжа завоевала 3 медали. 
+                </p>
+                <ul>
+                    <li>Компетенция «Программные решения для бизнеса» - золотая медаль -  Красюк Владимир (гр. ПКС-8-14)</li>
+                    <li>Компетенция «Электроника» - серебряная медаль - Шишкин Максим (гр. КСиК-7-14)</li>
+                    <li>Компетенция «Веб-разработка» - бронзовая медаль - Моисеев Никита (гр. КСиК-7-16)</li>
+                </ul>
+                <div class="sliderContainer">
+                    <a class="example-image-link" href="img/ph1.jpg" data-lightbox="example-1"><img class="example-image" src="img/ph1.jpg" alt="Диплом №1" /></a>
+                    <a class="example-image-link" href="img/ph2.jpg" data-lightbox="example-1"><img class="example-image" src="img/ph2.jpg" alt="Диплом №1" /></a>
+                    <a class="example-image-link" href="img/ph3.jpg" data-lightbox="example-1"><img class="example-image" src="img/ph3.jpg" alt="Диплом №1" /></a>
+                    <a class="example-image-link" href="img/ph4.jpg" data-lightbox="example-1"><img class="example-image" src="img/ph4.jpg" alt="Диплом №1" /></a>
+                </div>
             </div>
         </div>
     </div>
@@ -72,5 +91,13 @@
         <p>© ЧЭнК, 2017</p>
     </footer>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.sliderContainer').bxSlider({
+        'controls':true
+      });
+    });
+</script>
+<script type="text/javascript" src="media/js/lightbox.js"></script>
 </body>
 </html>

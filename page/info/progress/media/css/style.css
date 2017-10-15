@@ -77,7 +77,7 @@ header{
 
 /* Header - content */
 header h1{
-margin-top: 10vh;
+margin-top: 12vh;
 }
 
 /* Content - menu */
@@ -231,6 +231,10 @@ ul.left li a, ul.right li a{
     word-break: normal;
     width: 100%;
 
+}
+
+.example-image-link img{
+    max-height: 300px;
 }
 
 
