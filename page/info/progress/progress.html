@@ -12,12 +12,22 @@
     <link rel="icon" href="img/favicon.png">
     <!-- FontAwesome Icons -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+
     <title>Я выбираю профессию в сфере IT</title>
     <!-- CSS Fail -->
     <link rel="stylesheet" href="media/css/style.css">
     <link rel="stylesheet" href="media/css/media.css">
+    <link rel="stylesheet" href="media/css/lightbox.css">
+
+    <script type="text/javascript" src="media/js/jquery.js"></script>
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="media/css/jquery.bxslider.css">
+  <script src="media/js/jquery.bxslider.js"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -26,20 +36,11 @@
         <div class="chenk">
             <a href="http://chenk.ru"><img src="img/favicon.png" alt="Логотип"></a>
             <a href="http://chenk.ru">
-               <span>Челябинский энергетический колледж им. С.М. Кирова</br>
-                   <small>ГБПОУ Челябинский энергетический колледж им. С.М. Кирова</small>
-               </span>
+               <span>Челябинский энергетический колледж им. С.М. Кирова</span>
            </a>
         </div>
         <h1>Наши достижения</h1>
         <img src="img/trophy.png" alt="Иконка">
-<!--
-        <div class="nav_pr">
-            <a href="">Компьютерные сети и комплексы</a>
-            <a href="">Проверь себя</a>
-            <a href="">Программирование</a>
-        </div>
--->
     </header>
     
     <div class="content">
@@ -52,31 +53,41 @@
                 <li><a href="../worldskills/worldskills.html">WorldSkills</a></li>
                 <li><a href="../sor/sor.html">Материальная база</a></li>
             </ul>
-<!--
-            <ul class="right">
-                <li>
-                    <a href="../worldskills/worldskills.html">Дальше</a>
-                </li>
-            </ul>
--->
         </div>
         
         <div class="content_nav">
             <div class="content_to-flow">
                 <h1>Грамоты</h1>
                 <div class="container">
-                    <div class="one">
-                        <span>WorldSkills</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nulla?</p>
+                    <div class="container-Cont">
+                        <div class="one">
+                            <a class="example-image-link" href="image/1.png" data-lightbox="example-1"><img class="example-image" src="image/1.png" alt='Диплом за 3 место чемпионата WorldSkills Russia в компетенции "Графический дизайн" ' /></a>
+                        </div>
+                        <div class="two">
+                            <a class="example-image-link" href="image/2.png" data-lightbox="example-1"><img class="example-image" src="image/2.png" alt="Диплом №1" /></a>
+                        </div>
+                        <div class="three">
+                            <a class="example-image-link" href="image/3.jpg" data-lightbox="example-1"><img class="example-image" src="image/3.jpg" alt="Диплом №1" /></a>
+                        </div>
                     </div>
-                    <div class="two">
-                        <span>WorldSkills</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nulla?</p>
+                    <div class="container-Cont">
+                        <div class="one">
+                            <a class="example-image-link" href="image/4.jpg" data-lightbox="example-1"><img class="example-image" src="image/4.jpg" alt="Диплом №1" /></a>
+                        </div>
+                        <div class="two">
+                            <a class="example-image-link" href="image/5.jpg" data-lightbox="example-1"><img class="example-image" src="image/5.jpg" alt="Диплом №1" /></a>
+                        </div>
+                        <div class="three">
+                            <a class="example-image-link" href="image/6.jpg" data-lightbox="example-1"><img class="example-image" src="image/6.jpg" alt="Диплом №1" /></a>
+                        </div>
                     </div>
-                    
-                    <div class="three">
-                        <span>WorldSkills</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nulla?</p>
+                    <div class="container-Cont">
+                        <div class="one">
+                            <a class="example-image-link" href="image/7.jpg" data-lightbox="example-1"><img class="example-image" src="image/7.jpg" alt="Диплом №1" /></a>
+                        </div>
+                        <div class="two">
+                            <a class="example-image-link" href="image/8.jpg" data-lightbox="example-1"><img class="example-image" src="image/8.jpg" alt="Диплом №1" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,5 +117,21 @@
         <p>© ЧЭнК, 2017</p>
     </footer>
 </div>
+<script type="text/javascript">
+    $(".container div span").on("click",function(){
+        var parent=$(this).parent();
+        $(parent).children(0).trigger("click");
+    });
+    $(".container div p").on("click",function(){
+        var parent=$(this).parent();
+        $(parent).children(0).trigger("click");
+    });
+    $(document).ready(function(){
+      $('.container').bxSlider({
+        'controls':true
+      });
+    });
+</script>
+    <script type="text/javascript" src="media/js/lightbox.js"></script>
 </body>
 </html>
